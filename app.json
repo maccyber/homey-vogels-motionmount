@@ -1,0 +1,97 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "com.maccyber.vogels",
+  "version": "1.0.1",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "brandColor": "#FF0000",
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Vogels"
+  },
+  "description": {
+    "en": "Adds support for Vogels devices"
+  },
+  "category": [
+    "tools"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Jonas Enge",
+    "email": "jonas.enge@gmail.com"
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "MotionMount"
+      },
+      "class": "tv",
+      "capabilities": [
+        "list"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "ble"
+      ],
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "images": {
+        "small": "/drivers/motionmount/assets/images/small.png",
+        "large": "/drivers/motionmount/assets/images/large.png",
+        "xlarge": "/drivers/motionmount/assets/images/xlarge.png"
+      },
+      "id": "motionmount"
+    }
+  ],
+  "capabilities": {
+    "list": {
+      "type": "enum",
+      "title": {
+        "en": "Select mode"
+      },
+      "getable": true,
+      "setable": true,
+      "values": [
+        {
+          "id": "wall",
+          "title": {
+            "en": "Wall"
+          }
+        },
+        {
+          "id": "right",
+          "title": {
+            "en": "Right"
+          }
+        },
+        {
+          "id": "left",
+          "title": {
+            "en": "Left"
+          }
+        }
+      ],
+      "uiComponent": "picker"
+    }
+  }
+}

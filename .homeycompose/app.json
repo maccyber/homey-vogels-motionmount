@@ -1,0 +1,29 @@
+{
+  "id": "com.maccyber.vogels",
+  "version": "1.0.1",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "brandColor": "#FF0000",
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Vogels"
+  },
+  "description": {
+    "en": "Adds support for Vogels devices"
+  },
+  "category": [
+    "tools"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Jonas Enge",
+    "email": "jonas.enge@gmail.com"
+  }
+}

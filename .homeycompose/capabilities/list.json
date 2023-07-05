@@ -1,0 +1,21 @@
+{
+  "type": "enum",
+  "title": { "en": "Select mode" },
+  "getable": true,
+  "setable": true,
+  "values": [
+   {
+      "id": "wall",
+      "title": { "en": "Wall" }
+    },
+    {
+      "id": "right",
+      "title": { "en": "Right" }
+    },
+    {
+      "id": "left",
+      "title": { "en": "Left" }
+    }
+  ],
+  "uiComponent": "picker"
+}
